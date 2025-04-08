@@ -1,0 +1,35 @@
+.container {
+    border: 1px solid red;
+    font-size: 30px;
+    padding:20px;
+    color: white;
+    background: black;
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box1, .box2, .box3 {
+    padding: 10px 50px;
+    width: 150px;
+    height: 100px;
+}
+
+.box1 {
+     background: rgb(0, 0, 255);
+     
+    
+}
+.box2 {
+    background: red;
+
+}
+.box3 {
+    background: rgb(60, 255, 0);
+    
+}
+
