@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/*Header */
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.main-nav {
+    display: flex;
+    gap: 32px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .08s ease;
+}
+
+.main-nav a:hover {
+    border-bottom: 2px solid #2f2a8e;
+    color: #2f2a8e;
+}
+
+.nav-btn {
+    margin-left: 32px;
+}
+
+/* Buttons */
+.btn{
+    display: inline-block;
+    padding: 10px 28px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.btn-pry {
+    background-color: #2f2a8e;
+    color: white;
+}
+.btn-pry:hover {
+      background-color: #e3a300;
+}
+.btn-outline {
+    border: 1.5px solid #2f2a8e;
+    color: #2f2a8e;
+}
+.btn-outline:hover {
+    background-color: #2f2a8e; color: white;
+}
+/* Main */
+
+.hero {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px 20px;
+    display:flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-content {
+    flex-grow: 1;
+}
+
+.hero h1{
+    font-size: 36px;
+    line-height: 1.2;
+    color: #2f2a8e;
+}
+
+.accent {
+    color: #e3a300;
+}
+
+.hero p {
+    margin: 24px 0 32px;
+    line-height: 1.6;
+    max-width: 420px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-imagebox {
+    width: 360px;
+}
+.hero-image {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+@media (max-width:900px) {
+    .main-nav { display: none;}
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .hero-imagebox {
+        width: 70p%;
+        max-width: 320px;
+        margin-top: 20px;
+    }
+    .hero-buttons {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
